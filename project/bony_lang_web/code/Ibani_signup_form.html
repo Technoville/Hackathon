@@ -1,0 +1,124 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="ie=edge">
+        <link href="g-form.css" rel="stylesheet" type="text/css">
+        <title>Sign Up or Log In</title>
+        <style>
+            nav {
+                background: linear-gradient(-240deg ,rgba(0, 0, 0, 0.88),rgba(27, 133, 167, 0.69));
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 100px;
+                }
+                 nav .logo{
+                    font-size: 2.8rem;
+                    font-weight: bold;
+                    color: #fff;
+                }
+                  nav ul{
+                    list-style: none;
+                    display: flex;
+                }
+                  nav ul li{
+                    margin-left: 40px
+                }
+                  nav ul li a{
+                    color: #fff;
+                    font-size: 22px;
+                    transition: all 0.5s ease;
+                }
+                  nav ul li a:hover{
+                    color: #1b85a7;
+                }
+                .acct_btn{
+                    padding: 5px 20px;
+                    font-size: 16px;
+                    border: none;
+                    border-radius: 4px;
+                    background: #1b85a7;
+                    color: #f1f1f1;
+                    border: 1px solid #1b85a7;
+                    transition: all 0.5s ease;
+                }
+                .acct_btn:hover{
+                    border: 1px solid #fff;
+                    background: transparent;
+                }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <label for="logo" class="logo">Bonny Lang.</label>
+            <ul class="nav_links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../../music_player/index.html">Song</a>
+                </li>
+                <li>
+                    <a href="#vid-holder">Video</a>
+                </li>
+                <li>
+                    <a href="#">History</a>
+                </li>
+                <li>
+                    <a href="#">Faq</a>
+                </li>
+            </ul>
+            <a href="Ibani_signup_form.html"><button class="acct_btn">SIGN UP</button></a>
+        </nav>
+                                <!--------------------
+                                  --------------------
+
+                                       LOG IN FORM
+
+                                   -------------------
+                                   ------------------->
+        <div id="overlay">
+            <div class="form-div">
+                <div id="main-form">
+                    <div id="holder">
+                            <div id="head-butns">
+                                <button id="h-btn" class="log-in">LOG IN</button>
+                                <button id="h-btn" class="sign-btn">SIGN UP</button>
+                            </div>
+                            <div id="h-text">
+                                <h1>Log In For Free</h1>
+                            </div>
+                            <div id="inside">
+                                <div id="side-buttons">
+                                    <p style="color: red;">PLEASE ALL FIELDS!</p>
+                                    <input type="text" placeholder="First Name*" id="first-box">
+                                    <input type="text" placeholder="Last Name*" id="first-box" class="second-box">
+                                </div>
+                                <br>
+                                <br>
+
+                                    <input type="email" placeholder="Email Address*" id="r-boxes">
+                                    <br>
+                                    <br>
+
+                                    <input type="password" placeholder="Password*" id="r-boxes" class="pass-box">
+                                    <br>
+                                    <br>
+
+                                <button type="submit" id="l-box"><a href="#">Continue</a></button>
+                                
+                                <a id="forgot">forgotten password?</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+        
+        <script src="js/code.js" type="text/javascript"></script>
+    </body>
+</html>
