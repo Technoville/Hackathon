@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="register">
+      <div id="loader"></div>
+      <header id="header">
+        <i class="fas fa-arrow-left" id="prev"></i>
+        <p>Sign up</p>
+      </header>
+
+      <main>
+        <div id="input__field">
+          <div id="input__first">
+            <div id="details">
+              <label for="">First name</label>
+              <p>STEP 1 OF 3</p>
+            </div>
+            <input type="text" placeholder="" />
+          </div>
+
+          <div id="input__second">
+            <label for="">Last name</label>
+            <input type="text" placeholder="" />
+          </div>
+
+          <div id="input__third">
+            <div id="gender__section">
+              <label for="">Gender</label>
+              <!-- <input type="" placeholder=""> -->
+              <select name="" id="gender">
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="others">others</option>
+              </select>
+            </div>
+
+            <div id="dob__section">
+              <label for="">Date of Birth</label>
+              <input type="date" placeholder="" />
+            </div>
+          </div>
+        </div>
+
+        <div id="button_field">
+          <button id="next">Next</button>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/script.js"></script>
+    <!-- <script src="js/user.js"></script> -->
+  </body>
+</html>
