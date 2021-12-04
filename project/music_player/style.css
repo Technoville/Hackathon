@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* Using flex with the column direction to
+align items in a vertical direction */
+.player {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.61);
+    color: #fff;
+}
+.overlay{
+    box-sizing: border-box;
+    background-image: url(img/gift%204.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+#music-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#track-art {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 70%;
+    margin-bottom: 8px;
+}
+#track-art img{
+    width: 30vw;
+    height: 30vh;
+    border-radius: 2rem;
+}
+/* Changing the font sizes to suitable ones */
+.now-playing {
+    display: flex;
+    justify-content: center;
+/*    margin-top: -0.5rem;*/
+    margin-bottom: 2.2rem;
+}
+
+.track-name {
+font-size: 3rem;
+}
+
+.track-artist {
+font-size: 1.5rem;
+}
+#audio{
+    margin-top: -2.5rem;
+}
+
+/*buttons*/
+#left{
+    color: #c1c1c1;
+    position: absolute!important;
+    margin-left: 35rem;
+}
+#left:hover{
+    cursor: pointer;
+    color: white;
+}
+#right{
+    color: #c1c1c1;
+    position: absolute;
+    margin-left: -35rem;
+}
+#right:hover{
+    cursor: pointer;
+    color: white;
+}
+
+/* Define the slider width so that it scales properly */
+
+.slider_container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.slider_container a{
+    text-align: center;
+    margin-top: 0.4rem;
+    margin-left: -0.4rem;
+    position: absolute;
+    text-decoration: underline;
+    text-decoration-color: black;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.slider_container a:hover{
+    color: #c4c4c4;
+    text-decoration-color: #c4c4c4;
+}
+#lyrics-hold{
+    margin-top: 1rem;
+    position: absolute;
+}
+.slider_container #lyrics{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    margin-top: -2rem;
+    margin-left: 52.5rem;
+    /* height: 50%; */
+    opacity: 1;
+    transition: all 0.7s ease;
+}
+#lyrics p{
+    width: 70%;
+    text-align: center;
+}
+.disabled{
+    opacity:0;
+    pointer-events:none;
+}
+.player-two{
+    position: absolute;
+}

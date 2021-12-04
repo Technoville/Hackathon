@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <title>Music Player</title>
+        <style>
+            nav {
+                background: #000;
+                width: 84.2%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 100px;
+                }
+                 nav .logo{
+                    font-size: 2.8rem;
+                    font-weight: bold;
+                    color: #fff;
+                }
+                  nav ul{
+                    list-style: none;
+                    display: flex;
+                }
+                  nav ul li{
+                    margin-left: 40px
+                }
+                  nav ul li a{
+                    color: #fff;
+                    font-size: 22px;
+                    transition: all 0.5s ease;
+                }
+                  nav ul li a:hover{
+                    color: #1b85a7;
+                }
+                .acct_btn{
+                    padding: 5px 20px;
+                    font-size: 16px;
+                    border: none;
+                    border-radius: 4px;
+                    background: #1b85a7;
+                    color: #f1f1f1;
+                    border: 1px solid #1b85a7;
+                    transition: all 0.5s ease;
+                }
+                .acct_btn:hover{
+                    border: 1px solid #fff;
+                    background: transparent;
+                }
+                
+        </style>
+    </head>
+    <body>
+                        <!--NAVIGATION BARS-->
+        
+        <nav>
+            <label for="logo" class="logo">Bonny Lang.</label>
+            <ul class="nav_links">
+                <li>
+                    <a href="../bony_lang_web/code/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../../music_player/index.html">Songs</a>
+                </li>
+                <li>
+                    <a href="#">Video</a>
+                </li>
+                <li>
+                    <a href="#">History</a>
+                </li>
+                <li>
+                    <a href="#">Faq</a>
+                </li>
+            </ul>
+            <a href="Ibani_signup_form.html"><button class="acct_btn">SIGN UP</button></a>
+        </nav>
+        
+                        <!--MUSIC PLAYERS-->
+    <section class="overlay">
+      <div class="player">
+          
+          <i id="left" class="right fa fa-chevron-circle-right fa-2x"></i>
+          <i id="right" class="left fa fa-chevron-circle-left fa-2x"></i>
+          <!--slide buttons-->
+        <!-- Define the section for displaying details -->
+        <section id="music-section" class="player-two">
+            <div class="details">
+                <div id="track-art"><img src="img/gift%202.jpg" alt="image"></div>
+                <div class="track-name">Birthday Girl</div>
+                <div class="track-artist">Track Artist</div>
+                <div class="now-playing" id="now-playing">
+                    <div><p>Now Playing:</p><marquee>Chris_Brown_-_Birthday_Girl.mp3</marquee></div>
+                </div>
+            </div>
+            <div class="slider_container">
+                <audio src="music/Chris_Brown_-_Birthday_Girl.mp3" controls id="audio"></audio><br>
+                <a id="lyrics-hold">lyrics</a><br>
+                <div id="lyrics"><p>(Hook: Chris Brown &amp; (Tank)) Girl it’s your birthday (birthday) in here (in here) tonight (tonight) Girl it’s your birthday (birthday) in here (in here) tonight (tonight) Give it to me, go
+(Verse 1: Siya) Go, go, go, shawty it’s your bday You and your girls taking shots like a relay I know y’all only come around when the bottles out sh**, I only come around when the models out So what’s your sign baby? You a Cancer or Gemini baby? You a freak, do you do it for the Vine baby? I’m just tryna figure out if we can vibe baby
+(Verse 2: Tank) I don’t wanna waste no time I just wanna help you celebrate Cause I don’t meet ’em like you everyday Blow them candles out and get down to the cake I don’t wanna waste no time Baby girl, I know this what you like Get it in the air, we can take flight It’s a special dance, only right girl
+(Pre-Hook: Tank) Since you walked through the doors, it’s been like Lemme show you what it’s for cause I’ll Give you all I got and won’t look back What I do today, you gon’ remember that
+(Hook: Chris Brown &amp; (Tank)) Cause it’s your birthday (birthday) in here (in here) tonight (tonight) Girl it’s your birthday (birthday) in here (in here) tonight (tonight) Give it to me, go babe (go babe), go babe (go babe), go babe (go babe) Can you get low babe (low babe), low babe (low babe), low babe (low babe)?
+(Verse 3: Chris Brown) I see you sitting with your man, but you’re over there staring at me I’m already making plans, baby I know what your tip gon’ be You know I’m the truth huh, I do all the things you wanna do huh We should let you loose huh, strip you down to your birthday suit huh
+(Pre-Hook: Tank &amp; (Chris Brown))</p></div>
+            </div>
+        </section>
+          <section id="music-section" class="player-two">
+            <div class="details">
+                <div id="track-art"><img src="img/ben%205.jpg" alt="image"></div>
+                <div class="track-name">Lucky Me</div>
+                <div class="track-artist">Chris Brown</div>
+                <div class="now-playing" id="now-playing">
+                    <div><p>Now Playing:</p><marquee>Chris_Brown_-_Lucky_Me_(_Graffiti_Album_).mp3</marquee></div>
+                </div>
+            </div>
+            <div class="slider_container">
+                <audio src="music/Chris_Brown_-_Lucky_Me_(_Graffiti_Album_).mp3" controls id="audio"></audio>
+                <a id="lyrics-hold" class="lyrics-hold-two">lyrics</a><br>
+                <div id="lyrics" class="lyrics-two"></div>
+            </div>
+        </section>
+          <section id="music-section" class="player-two">
+            <div class="details">
+                <div id="track-art"><img src="img/gift%203.jpg" alt="image"></div>
+                <div class="track-name">Right Here</div>
+                <div class="track-artist">Chris Brown</div>
+                <div class="now-playing" id="now-playing">
+                    <div><p>Now Playing:</p><marquee>Chris_Brown_-_Right_Here_(Music_Video).mp3</marquee></div>
+                </div>
+            </div>
+            <div class="slider_container">
+                <audio src="music/Chris_Brown_-_Right_Here_(Music_Video).mp3" controls id="audio"></audio>
+                <a id="lyrics-hold" class="lyrics-hold-three">lyrics</a><br>
+                <div id="lyrics" class="lyrics-three"></div>
+            </div>
+        </section>
+      </div>
+    </section>
+
+
+
+
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
